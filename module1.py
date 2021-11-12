@@ -23,8 +23,8 @@ def arithmetic(a: float,b:float,c=str):
     else:
         r="tundmatu sym"       
     return r
-def is_year_leap(year:int)->bool:
-    """Мы пишем произвольный год, и программа решает, является ли виза на год правильной или неправильной.
+def is_year_leap(year:int)
+    """Возвращает значение true, если год слишком короткий, и значение Flase, если нет
         :param int year:esimene arv
     :rtype str
     """
