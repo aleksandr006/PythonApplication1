@@ -19,10 +19,10 @@ def arithmetic(a: float,b:float,c=str):
         if b!=0:
             r=a/b
         else:
-            print("Div0")
+            r="div/0"
     else:
-        print("Viga!")
-    return("")
+        r="tundmatu sym"       
+    return r
 def is_year_leap(year:int)->bool:
     """Мы пишем произвольный год, и программа решает, является ли виза на год правильной или неправильной.
         :param int year:esimene arv
