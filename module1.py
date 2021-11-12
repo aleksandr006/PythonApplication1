@@ -25,14 +25,16 @@ def arithmetic(a: float,b:float,c=str):
     return("")
 def is_year_leap(year:int):
     """Мы пишем произвольный год, и программа решает, является ли виза на год правильной или неправильной.
+    rtype str
     """
     if year%4==0:
-        print("True")
+        t=True      
     else:
-        print("False")
+        t=False
     return("")
 def square(kv:float):
     """Мы пишем сторону квадрата, и программа выдает нам площадь квадрата, периметр и диагональ
+    rtype float
     """
     return(4*kv, kv**2, (2*kv**2)**.5)
     return("")
@@ -41,28 +43,28 @@ def season(kuu:int):
     parem float a месяц
     :rtype str"""
     
-    if kuu==12:
-        res="Зима"
-    elif 0<kuu<3:
-        res="Зима"
+    if kuu==12 or 1<=kuu<=2:
+       print("Зима")
     elif 2<kuu<6:
-        res="Весна"
+        print("Весна")
     elif 5<kuu<9:
-        res="Лето"
+        print("Лето")
     elif 8<kuu<12:
-        res="Осень"
+        print("Осень")
     else:
-        res="Viga!"
-    return res 
-def bank(a:float,years:int):
+        print("Viga!")
+    return
+def bank(a:float,years:int)
     """Мы кладем деньги на баланс и ждем n лет
-    """
+    rtype float
+"""
     for _ in range(years):
         a=((1.1*1/100)*a)*100
     print("Ваш баланс:",a)
     return("")
 def is_prime(a:int):
     """Мы записываем число от 0 до 1000 и возвращаем true, если оно простое, и false в противном случае.
+    rtype str
     """
     b=2
     while a%b!=0:
