@@ -23,8 +23,10 @@ def arithmetic(a: float,b:float,c=str):
     else:
         print("Viga!")
     return("")
-def is_year_leap(year:int):
+def is_year_leap(year:int)->bool:
     """Мы пишем произвольный год, и программа решает, является ли виза на год правильной или неправильной.
+        :param int year:esimene arv
+    :rtype str
     """
     if year%4==0:
         t=True      
@@ -32,13 +34,17 @@ def is_year_leap(year:int):
         t=False
     return("")
 def square(kv:float):
-    """Мы пишем сторону квадрата, и программа выдает нам площадь квадрата, периметр и диагональ
+    """Мы пишем сторону квадрата, и программа выдает нам площадь квадрата, периметр и диагональ 
+     :param int kv:esimene arv
+    :rtype float
     """
+
     return(4*kv, kv**2, (2*kv**2)**.5)
     return("")
 def season(kuu:int):
     """Мы пишем от 1 до 12 месяцев, и программа устанавливает сезон по месяцам
     parem float a месяц
+   :param int kuu: esimene arv
     :rtype str"""
     
     if kuu==12:
