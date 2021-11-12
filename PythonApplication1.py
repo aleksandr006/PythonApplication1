@@ -1,15 +1,39 @@
 from module1 import *
 while True:
-    print("funksioind".center(50,"+"))
-    print("arithmetic- A,\nis_year_leap-Y")
-    v=input("arithmetic- A")
+    print("Funktsioonid".center(50,"+"))
+    v=input("arithmetic- A, \nis_year_leap- B, \nsquare- C, \nseason- D, \nbank- E ,\nkodeeriumine_de- X")
     if v.upper()=="A":
-        a=float(input("esimene arv"))
-        b=float(input("teine arv"))
-        sym=input("Tehe:")
-        rezult=arithmetic(a,b,sym)
+        a=float(input("Arv 1: "))
+        b=float(input("Arv 2: "))
+        c=input("Tehe: ")
+        result=arithmetic(a,b,c)
+        print(result)
+    elif v.upper()=="B":
+        year=int(input("Sisesta aasta: "))
+        result=is_year_leap(year)
+        print(result)
+    elif v.upper()=="C":
+        kv=int(input("Sisestage ruudu külg: "))
+        result=square(kv)
+        print(result)
+    elif v.upper()=="D":
+        kuu=int(input("Sisestage kuu number: "))
+        result=season(kuu)
+        print(result)
+    elif v.upper()=="E":
+        a=float(input("Sisestage sissemakse summa: "))
+        years=int(input("Mitu aastat on möödunud?"))
+        result=bank(a,years)
+        print(result)
+    elif v.upper()=="F":
+        a=int(input("Sisestage number: "))
+        result=is_prime(a)
+        print(result)
+    elif v.upper()=="X":
+        print("kodeeriumine".center(60,"*"))
+        rezult=xor_cipher(input("siseta text"), input("sisesta võti :"))
         print(rezult)
-    elif v.upper()=="Y":
-        is_year_leap()
-        rezolut=is_year_leap((int(input("sisesta aasta"))))
+        print("Dekoderiumine". center(60,"*"))
+        de_rezult=xor_uncipher(rezult, input("sisesta võti:"))
+        print(de_rezult)
  
