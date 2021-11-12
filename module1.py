@@ -38,20 +38,22 @@ def square(kv:float):
     return("")
 def season(kuu:int):
     """Мы пишем от 1 до 12 месяцев, и программа устанавливает сезон по месяцам
-    """
+    parem float a месяц
+    :rtype str"""
+    
     if kuu==12:
-        print("Зима")
+        res="Зима"
     elif 0<kuu<3:
-        print("Зима")
+        res="Зима"
     elif 2<kuu<6:
-        print("Весна")
+        res="Весна"
     elif 5<kuu<9:
-        print("Лето")
+        res="Лето"
     elif 8<kuu<12:
-        print("Осень")
+        res="Осень"
     else:
-        print("Viga!")
-    return
+        res="Viga!"
+    return res 
 def bank(a:float,years:int):
     """Мы кладем деньги на баланс и ждем n лет
     """
